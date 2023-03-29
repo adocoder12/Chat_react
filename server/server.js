@@ -23,8 +23,6 @@ app.use(cors());
 
 mongoose.set('strictQuery', false);
 
-// const uri = "mongodb+srv://adonay:1234@chat.5dqjfg1.mongodb.net/Chat_app?retryWrites=true&w=majority"
-
 
 
 app.use("/api/user", authRoutes);
