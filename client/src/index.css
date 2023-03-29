@@ -1,0 +1,152 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #305579;
+  --error: #e7195a;
+}
+
+body {
+  background: #615d5d;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+header {
+  background: #638694;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+header .container .UserName {
+  margin-right: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+}
+
+header a {
+  color: #ffffffe9;
+  text-decoration: none;
+}
+
+.btn-logout {
+  box-shadow: 2px 6px 14px -7px #276873;
+  background-color: #99b5bf;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+
+.btn-logout:hover {
+  background: linear-gradient(to bottom, #749da3 5%, #99b5bf 100%);
+  background-color: #749da3;
+}
+
+
+
+
+.pages {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  width: 100vw;
+  height: 80vh;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 1px solid white;
+}
+
+
+/* new workout form */
+form {
+  background-color: #638694;
+  padding: 20px;
+  min-width: 40vw;
+  min-height: 40vh;
+  border-radius: 15px;
+}
+
+form h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 13px 40px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+
+
+form .small {
+  line-height: 25px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+Form .links {
+  color: #ececec;
+  text-decoration: none;
+
+}
+
+Form .links:hover {
+  color: #c4c4c4;
+  text-decoration: underline;
+}

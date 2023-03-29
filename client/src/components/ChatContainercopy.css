@@ -1,0 +1,121 @@
+.chat-container {
+    display: flex;
+    flex-flow: column;
+    /* overflow: hidden; */
+    min-height: 70vh;
+    background: #638694;
+    justify-content: space-between;
+
+
+}
+
+.message-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chat-container .message-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-container .currentChat {
+    background-color: #162c34;
+    position: sticky;
+    font-weight: 400;
+    color: white;
+    text-align: start;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+.chat-container .message,
+.incoming-message {
+    height: auto;
+    padding: 10px;
+    display: flex;
+}
+
+.chat-container .incoming-message {
+    justify-content: flex-end;
+}
+
+.chat-container .message .incoming-message,
+.message-content {
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    max-width: 250px;
+    background-color: #43a047;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+
+.message-meta #author {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.chat-container .message .incoming-message,
+.message-meta {
+    display: flex;
+    font-size: 12px;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+/* chat input */
+.chat-input {
+    flex-flow: row;
+    display: flex;
+    color: #fff;
+    padding: 5px;
+    max-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff45;
+
+
+}
+
+.txt-input {
+    width: 80vw;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+
+}
+
+.btn-submit {
+    font-size: 15px;
+    background: #49a449;
+    color: white;
+    /* letter-spacing: 1px; */
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 16px 44px;
+}
+
+.btn-submit:hover {
+    background: #2a9d2ab0;
+
+}

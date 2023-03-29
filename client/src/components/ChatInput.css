@@ -1,0 +1,44 @@
+/* chat input */
+.chat-input {
+
+    color: #fff;
+    padding: 5px;
+    max-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff45;
+
+
+
+
+}
+
+.txt-input {
+    width: 100vw;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+
+
+}
+
+.btn-submit {
+    font-size: 15px;
+    background: #49a449;
+    color: white;
+    /* letter-spacing: 1px; */
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 16px 44px;
+}
+
+.btn-submit:hover {
+    background: #2a9d2ab0;
+
+}
