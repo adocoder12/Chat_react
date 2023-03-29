@@ -31,10 +31,10 @@ const Signup = () => {
   async function uploadImage() {
     const data = new FormData();
     data.append("file", image);
-    data.append("upload_preset", "z2r2ztiu");
+    data.append("upload_preset", "yourOwnKey");
     try {
       // setUploadingImg(true);
-      let res = await fetch("https://api.cloudinary.com/v1_1/dvzjsccob/image/upload", {
+      let res = await fetch("https://api.cloudinary.com/v1_1/OwnUrlKey/image/upload", {
         method: "post",
         body: data,
       });
